@@ -22,16 +22,16 @@ hr {
   margin-bottom: 30px;
 }
 /* header */
-.header-head {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-}
 header {
   color: white;
   background-color: #562eff;
-  height: 100px;
+  height: 110px;
+  margin: 0;
+}
+.con-head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 h1 {
   font-size: 25px;
@@ -39,25 +39,28 @@ h1 {
 h4 {
   font-size: 16px;
 }
-.first {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.first-head {
+  display: flex;
   align-items: center;
 }
-.first img {
+.first-head h1 {
+  padding: 20px;
+}
+.first-head img {
   width: 40px;
   height: 50px;
 }
-.second {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.second-head {
+  display: flex;
   align-items: center;
 }
-.second img {
+.second-head h4 {
+  padding: 20px;
+}
+.second-head img {
   width: 50px;
   height: 50px;
+  padding: 20px;
 }
 /* top player style */
 .top-palyer {
@@ -140,6 +143,7 @@ h4 {
 @media only screen and (max-width: 688px) {
   .container {
     width: 100%;
+    padding: 0;
   }
   .players,
   .blogs,
@@ -150,10 +154,17 @@ h4 {
   .blogs {
     flex-direction: column;
   }
+  .second-head img {
+    padding: 0px;
+  }
+  .second-head h4 {
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+    padding: 0;
   }
   .players,
   .courses {
