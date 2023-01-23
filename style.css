@@ -141,9 +141,12 @@ h4 {
 }
 /* media queries */
 @media only screen and (max-width: 688px) {
+  main {
+    padding: 1rem;
+  }
   .container {
     width: 100%;
-    padding: 0;
+    padding: 1rem;
   }
   .players,
   .blogs,
@@ -158,13 +161,16 @@ h4 {
     padding: 0px;
   }
   .second-head h4 {
-    padding: 0;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+  main {
+    padding: 1rem;
+  }
   .container {
     width: 100%;
-    padding: 0;
+    padding: 1rem;
   }
   .players,
   .courses {
